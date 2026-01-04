@@ -15,7 +15,14 @@ export const useStations = () => {
         const response = await fetch(API_URL)
         if (!response.ok) throw new Error('Failed to fetch stations')
         const json = await response.json()
-        setData(json)
+        const normalizedData = json.map((station: any) => ({
+          id: station.id,
+          name: station.name,
+          city: station.city,
+          latitude: station.lat,
+          longitude: station.lng,
+        }))
+        setData(normalizedData)
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error')
       } finally {
