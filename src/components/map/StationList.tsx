@@ -25,8 +25,8 @@ export function StationList({
       {stations.map((station) => (
         <Card
           key={station.id}
-          className={`cursor-pointer transition-colors hover:bg-accent ${
-            selectedId === station.id ? 'border-primary bg-accent' : ''
+          className={`cursor-pointer transition-colors hover:bg-zinc-800 bg-zinc-900 text-white border-lime-600 ${
+            selectedId === station.id ? 'border-lime-900 bg-lime-700' : ''
           }`}
           onClick={() => onSelect(station.id)}
         >
@@ -34,7 +34,7 @@ export function StationList({
             <CardTitle className="text-sm font-medium">
               {station.name}
             </CardTitle>
-            <p className="text-xs text-muted-foreground">{station.city}</p>
+            <p className="text-xs text-white">{station.city}</p>
           </CardHeader>
         </Card>
       ))}
