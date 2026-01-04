@@ -3,7 +3,7 @@
 A modern, responsive frontend application visualizing German train stations on an interactive map. Built for the PANTOhealth technical assessment.
 
 ![Project Screenshot](public/screenshot.png) ## 🚀 Live Demo
-[**View Deployed App**](YOUR_VERCEL_LINK_HERE)
+[**View Deployed App**](https://germany-train-stations-alpha.vercel.app)
 
 ## 🛠 Tech Stack
 * **Framework:** React 18 + Vite
@@ -60,4 +60,4 @@ Unit tests are included for the core business logic hook using **Vitest**.
 * Verifies that filter actions trigger navigation events.
 
 ---
-*Created by [Your Name]*
+*Created by Mohammad Aghaei*
